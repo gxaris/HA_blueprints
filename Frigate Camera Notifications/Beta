@@ -69,7 +69,6 @@ blueprint:
         Select the script you want to action together with the notifications.
       selector:
         entity:
-          integration: scripts
     camera:
       name: Frigate Camera
       description: |
