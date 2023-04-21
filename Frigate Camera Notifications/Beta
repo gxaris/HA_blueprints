@@ -63,6 +63,13 @@ blueprint:
   domain: automation
   source_url: https://github.com/SgtBatten/HA_blueprints/blob/main/Frigate%20Camera%20Notifications/Beta
   input:
+    script:
+      name: Action Script
+      description: |
+        Select the script you want to action together with the notifications.
+      selector:
+        entity:
+          integration: scripts
     camera:
       name: Frigate Camera
       description: |
