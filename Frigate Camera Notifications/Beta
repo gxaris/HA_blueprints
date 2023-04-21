@@ -1,5 +1,5 @@
 blueprint:
-  name: Frigate Notifications (0.11.0.16e)
+  name: Frigate Notifications by Harry
   description: |
     ## Frigate Notifications
 
@@ -627,6 +627,8 @@ variables:
   tv_interrupt: !input tv_interrupt
   debug: !input debug
 action:
+  - service: script.new_script
+    data: {}
   - choose:
       - alias: "Silence New Object Notifications"
         conditions:
